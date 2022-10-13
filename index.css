@@ -1,0 +1,29 @@
+.i1{
+    grid-area: i1;
+}
+
+.i2{
+    grid-area: i2;
+}
+
+.i3 {
+    grid-area: i3;
+}
+
+.i4{
+    grid-area: logo;
+}
+
+.i5{
+    grid-area: i5;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'logo . i5 . i1 i2 i3';
+    
+}
