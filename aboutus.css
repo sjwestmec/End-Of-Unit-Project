@@ -6,3 +6,40 @@ h3{
 text-align: center;
 font-family: Verdana, Geneva, Tahoma, sans-serifs;
 }
+
+
+.container{
+display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". . . ."
+        ". . . ."
+        ". . . ."
+        ". . . .";
+}
+.img1{
+    grid-area: a;
+}
+.img2 {
+    grid-area: b;
+}
+.img3 {
+    grid-area: c;
+}
+.img4 {
+    grid-area: d;
+}
+.img5 {
+    grid-area: e;
+}
+.img6 {
+    grid-area: f;
+}
+.img7 {
+    grid-area: g;
+}
+.img8{
+    grid-area: h;
+}
+
