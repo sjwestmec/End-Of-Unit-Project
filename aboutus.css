@@ -10,13 +10,13 @@ font-family: Verdana, Geneva, Tahoma, sans-serifs;
 
 .container{
 display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        ". . . ."
-        ". . . ."
-        ". . . ."
-        ". . . .";
+        "a . . e"
+        "b . . f"
+        "c . . g"
+        "d . . h";
 }
 .img1{
     grid-area: a;
@@ -41,5 +41,10 @@ display: grid;
 }
 .img8{
     grid-area: h;
+}
+
+.size{
+    max-width: 1000px;
+    height: 200px;
 }
 
