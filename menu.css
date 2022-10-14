@@ -44,13 +44,27 @@
 .kid {
     grid-area: kid;
 }
+
+.i6{
+    grid-area: i6;
+}
 .container {
+    gap: 10px;
+    margin: 10px;
     display: grid;
+    justify-items: center;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        'logo . i5 i5 . i1 i2 i3';
+    'logo . i5 i5 . i1 i2 i3'
+    'i6 i6 i6 i6 i6 i6 i6 i6'
+    'burger burger kid kid salad salad appetizers appetizers'
+    'shake shake beverages beverages side side dessert dessert';
 
 }
 
+.size {
+    max-width: 100%;
+    height: 365px;
+}
