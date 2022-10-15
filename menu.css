@@ -15,34 +15,42 @@
 }
 .burger {
     grid-area: burger;
+    border: 3px solid black;
 }
 
 .shake {
     grid-area: shake;
+    border: 3px solid black;
 }
 
 .side {
     grid-area: side;
+    border: 3px solid black;
 }
 
 .salad {
     grid-area: salad;
+    border: 3px solid black;
 }
 
 .dessert {
     grid-area: dessert;
+    border: 3px solid black;
 }
 
 .appetizers {
     grid-area: appetizers;
+    border: 3px solid black;
 }
 
 .beverages {
     grid-area: beverages;
+    border: 3px solid black;
 }
 
 .kid {
     grid-area: kid;
+    border: 3px solid black;
 }
 
 .i6{
@@ -66,5 +74,53 @@
 
 .size {
     max-width: 100%;
-    height: 365px;
+    height: 345px;
+}
+
+.gallery {
+    margin: 5px;
+    border: 1px solid black;
+    width: 180px;
+}
+
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.burger:hover{
+    border: 3px solid red;
+}
+
+.kid:hover {
+    border: 3px solid red;
+}
+
+.shake:hover {
+    border: 3px solid red;
+}
+
+.side:hover {
+    border: 3px solid red;
+}
+
+.appetizers:hover {
+    border: 3px solid red;
+}
+
+.burger:hover {
+    border: 3px solid red;
+}
+
+.beverages:hover {
+    border: 3px solid red;
+}
+
+.salad:hover {
+    border: 3px solid red;
+}
+
+.dessert:hover {
+    border: 3px solid red;
 }
