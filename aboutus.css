@@ -17,14 +17,15 @@ body {
 
 .container{
 display: grid;
-    grid-template-columns: repeat(4, 20%);
+    grid-template-columns: repeat(6, 20%);
     grid-template-rows: auto ;
     gap: 20px;
     justify-content: space-evenly;
     justify-self: center;
+    
     grid-template-areas:
-        "a c d e"
-        "b h g f"
+        ". a c d e ."
+        ". b h g f ."
         ;
 }
 .img1{
