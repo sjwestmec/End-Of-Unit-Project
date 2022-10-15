@@ -17,9 +17,11 @@ body {
 
 .container{
 display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr ;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: auto ;
     gap: 20px;
+    justify-content: space-evenly;
+    justify-self: center;
     grid-template-areas:
         "a c d e"
         "b h g f"
@@ -27,36 +29,30 @@ display: grid;
 }
 .img1{
     grid-area: a;
-    justify-self: center;
 }
 .img2 {
     grid-area: b;
-    justify-self: center;
 }
 .img3 {
     grid-area: c;
-    justify-self: center;
 }
 .img4 {
     grid-area: d;
-    justify-self: center;
 }
 .img5 {
     grid-area: e;
-    justify-self: center;
 }
 .img6 {
     grid-area: f;
-    justify-self: center;
     margin-top: 55px;
 }
 .img7 {
     grid-area: g;
-    justify-self: center;
+    
 }
 .img8{
     grid-area: h;
-    justify-self: center;
+
 }
 .video{
     
