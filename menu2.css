@@ -52,5 +52,5 @@
     grid-template-areas:
         'logo . i5 i5 . i1 i2 i3'
         'name name name name name name name name'
-        'aside aside aside flex flex flex . .';
+        'aside aside aside flex flex flex flex .';
 }
