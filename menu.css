@@ -61,6 +61,7 @@
     margin: 10px;
     display: grid;
     justify-items: center;
+    width: fit-content;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -77,16 +78,10 @@
     height: 345px;
 }
 
-.gallery {
-    margin: 5px;
-    border: 1px solid black;
-    width: 180px;
-}
-
-
 .desc {
     padding: 15px;
     text-align: center;
+    color: black;
 }
 
 .burger:hover{
@@ -123,4 +118,8 @@
 
 .dessert:hover {
     border: 3px solid red;
+}
+
+a{
+    text-decoration: none;
 }

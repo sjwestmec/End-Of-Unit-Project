@@ -1,0 +1,56 @@
+.i1 {
+    grid-area: i1;
+}
+
+.i2 {
+    grid-area: i2;
+}
+
+.i3 {
+    grid-area: i3;
+}
+
+.i4 {
+    grid-area: logo;
+}
+
+.i5 {
+    grid-area: i5;
+}
+
+.aside{
+    grid-area: aside;
+    justify-self: center;
+    font-size: larger;
+}
+
+.flex{
+    grid-area: flex;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu{
+    grid-area: name;
+    justify-self: center
+}
+
+.desc{
+    font-size: xx-small;
+}
+
+.gburg{
+    border: 3px solid black;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'logo . i5 i5 . i1 i2 i3'
+        'name name name name name name name name'
+        'aside aside aside flex flex flex . .';
+}
