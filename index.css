@@ -50,7 +50,6 @@ body{
 .footer{
     grid-area: footer;
     justify-self: center;
-    justify-items: center;
 }
 
 .end{

@@ -58,6 +58,10 @@
     background-color: white;
 }
 
+.size{
+    height: 300px;
+    width: 300px;
+}
 .container {
     display: grid;
     gap: 10px;
@@ -67,7 +71,7 @@
         'logo i5 i5 i5 i1 i2 i3 order'
         '. . . . . . . .'
         'title title title title title title title title'
-        '. aside aside . flex flex flex .';
+        '. aside aside . flex flex flex flex';
 }
 
 p{
@@ -99,6 +103,32 @@ a{
 }
 
 @media only screen and (max-width: 479px) {
+.i1 {
+        grid-area: i1;
+        align-self: center;
+    }
+
+    .i2 {
+        grid-area: i2;
+        align-self: center;
+    }
+
+    .i3 {
+        grid-area: i3;
+        align-self: center;
+    }
+
+    .i4 {
+        grid-area: logo;
+        align-self: center;
+    }
+
+    .i5 {
+        grid-area: i5;
+        justify-self: start;
+        align-self: center;
+    }
+    
     .container {
         display: grid;
         gap: 10px;
@@ -108,8 +138,7 @@ a{
         grid-template-areas:
             'logo i5 i5 i5'
             'i1 i2 i3 order'
-            'aside aside aside aside'
-            'flex flex flex flex';
+            'aside flex flex flex';
     }
 
     .button {
