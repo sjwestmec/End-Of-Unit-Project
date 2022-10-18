@@ -36,6 +36,7 @@
     justify-self: center
 }
 
+
 .desc{
     font-size: xx-small;
     justify-self: center;
@@ -54,7 +55,8 @@
     grid-template-rows: auto;
     grid-template-areas:
         'logo . i5 i5 . i1 i2 i3'
-        'name name name name name name name name'
+        '. . . . . . . .'
+        'title title title title title title title title'
         'aside aside aside flex flex flex flex .';
 }
 
