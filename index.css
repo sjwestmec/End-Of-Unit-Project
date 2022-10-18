@@ -14,14 +14,17 @@
     grid-area: logo;
 }
 
-.i5{
-    grid-area: i5;
-}
-
 .i5 {
     grid-area: i5;
     justify-self: center;
 }
+
+.footer{
+    grid-area: footer;
+    justify-self: center;
+}
+
+
 
 .container {
     display: grid;
@@ -29,5 +32,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        'logo i5 i5 i5 i1 i2 i3 order';
+        'logo i5 i5 i5 i1 i2 i3 order'
+        '. . . . . . . .'
+        'footer footer footer footer footer footer footer footer';
 }
