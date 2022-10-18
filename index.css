@@ -6,37 +6,44 @@ body{
 .i1{
     grid-area: i1;
     align-self: center;
+    justify-content: center;
 }
 
 .i2{
     grid-area: i2;
     align-self: center;
+    justify-content: center;
 }
 
 .i3 {
     grid-area: i3;
     align-self: center;
+    justify-content: center;
 }
 
 .i4{
     grid-area: logo;
     align-self: center;
+    justify-content: center;
 }
 
 .i5 {
     grid-area: i5;
     justify-self: center;
     align-self: center;
+    justify-content: center;
 }
 
 .order{
     grid-area: order;
     align-self: center;
+    justify-content: center;
 }
 
 .biglogo{
     grid-area: biglogo;
     justify-self: center;
+    justify-content: center;
     
 }
 
@@ -67,4 +74,17 @@ body{
 .navbar{
     background-color: rebeccapurple;
     position: sticky;
+}
+
+@media only screen and (max-width: 479px) {
+    .container {
+        display: grid;
+        gap: 10px;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            'logo i5 i5 i5'
+            'i1 i2 i3 order';
+    }
 }

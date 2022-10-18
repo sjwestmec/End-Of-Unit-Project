@@ -67,7 +67,7 @@
         'logo i5 i5 i5 i1 i2 i3 order'
         '. . . . . . . .'
         'title title title title title title title title'
-        '. aside aside . flex flex flex flex';
+        '. aside aside . flex flex flex .';
 }
 
 p{
@@ -84,4 +84,30 @@ a{
     text-decoration: underline;
     font-weight: 1000;
     color: black;
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 479px) {
+    .container {
+        display: grid;
+        gap: 10px;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            'logo i5 i5 i5'
+            'i1 i2 i3 order'
+            'aside flex flex flex';
+    }
 }
