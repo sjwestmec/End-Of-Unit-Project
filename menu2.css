@@ -108,6 +108,19 @@ a{
         grid-template-areas:
             'logo i5 i5 i5'
             'i1 i2 i3 order'
-            'aside flex flex flex';
+            'aside aside aside aside'
+            'flex flex flex flex';
+    }
+
+    .button {
+        padding: 5px 5px;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: white;
+        border: none;
+        border-radius: 15px;
     }
 }
