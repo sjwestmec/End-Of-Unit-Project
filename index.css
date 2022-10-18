@@ -18,10 +18,16 @@
     grid-area: i5;
 }
 
-.container{
+.i5 {
+    grid-area: i5;
+    justify-self: center;
+}
+
+.container {
     display: grid;
+    gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    'logo . i5 i5 . i1 i2 i3';
+        'logo i5 i5 i5 i1 i2 i3 order';
 }

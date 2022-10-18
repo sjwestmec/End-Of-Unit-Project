@@ -1,13 +1,16 @@
 .i1 {
     grid-area: i1;
+    justify-self: center;
 }
 
 .i2 {
     grid-area: i2;
+    justify-self: center;
 }
 
 .i3 {
     grid-area: i3;
+    justify-self: center;
 }
 
 .i4 {
@@ -16,6 +19,7 @@
 
 .i5 {
     grid-area: i5;
+    justify-self: center;
 }
 
 .aside{
@@ -48,16 +52,21 @@
     background-color: white;
 }
 
+.order{
+    grid-area: order;
+    justify-self: center;
+}
+
 .container {
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        'logo . i5 i5 . i1 i2 i3'
+        'logo i5 i5 i5 i1 i2 i3 order'
         '. . . . . . . .'
         'title title title title title title title title'
-        'aside aside aside flex flex flex flex .';
+        'aside aside aside flex flex flex flex .'
 }
 
 p{

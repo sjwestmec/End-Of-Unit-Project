@@ -24,7 +24,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        'logo . i5 i5 . i1 i2 i3';
+        'logo i5 i5 i5 i1 i2 i3 order'
 }
 
 form{
