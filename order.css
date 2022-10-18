@@ -1,21 +1,32 @@
 .i1 {
     grid-area: i1;
+    align-self: center;
 }
 
 .i2 {
     grid-area: i2;
+    align-self: center;
 }
 
 .i3 {
     grid-area: i3;
+    align-self: center;
 }
 
 .i4 {
     grid-area: logo;
+    align-self: center;
 }
 
 .i5 {
     grid-area: i5;
+    justify-self: center;
+    align-self: center;
+}
+
+.order {
+    grid-area: order;
+    align-self: center;
 }
 
 .container {
@@ -24,7 +35,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        'logo i5 i5 i5 i1 i2 i3 order'
+        'logo i5 i5 i5 i1 i2 i3 order';
 }
 
 form{
