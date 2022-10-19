@@ -1,3 +1,4 @@
+/* header */
 .i1 {
     grid-area: i1;
     align-self: center;
@@ -28,13 +29,13 @@
     grid-area: order;
     align-self: center;
 }
-
+/* menu buttons */
 .aside{
     grid-area: aside;
     justify-self: center;
     font-size: larger;
 }
-
+/* menu items */
 .flex{
     grid-area: flex;
     display: flex;
@@ -47,7 +48,7 @@
     justify-self: center
 }
 
-
+/* menu descriptions */
 .desc{
     font-size: xx-small;
     background-color: white;
@@ -57,12 +58,12 @@
     border: 3px solid black;
     background-color: white;
 }
-
+/* size pf images */
 .size{
     height: 300px;
     width: 300px;
 }
-
+/* header and footer */
 .header {
     display: flex;
     background-color: #C6C7C4;
@@ -82,7 +83,7 @@
     text-align: center;
     font-size: small;
 }
-
+/* grid */
 .container {
     display: grid;
     gap: 10px;
@@ -90,7 +91,8 @@
     grid-template-rows: auto;
     grid-template-areas:
         'title title title title title title title title'
-        '. aside aside . flex flex flex flex';
+        '. aside aside . flex flex flex .'
+        'footer footer footer footer footer footer footer footer';
 }
 
 p{
@@ -105,14 +107,20 @@ body{
 }
 
 a{
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: 1000;
     color: black;
+
+}
+
+a:hover {
+    color: red;
 }
 
 .button {
     padding: 15px 25px;
     font-size: 24px;
+    width: 100%;
     text-align: center;
     cursor: pointer;
     outline: none;
@@ -121,34 +129,34 @@ a{
     border: none;
     border-radius: 15px;
 }
-
+/* mobile version of menu */
 @media only screen and (max-width: 479px) {
-.i1 {
-        grid-area: i1;
-        align-self: center;
-    }
-
-    .i2 {
-        grid-area: i2;
-        align-self: center;
-    }
-
-    .i3 {
-        grid-area: i3;
-        align-self: center;
+.header {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #C6C7C4;
+        justify-content: space-evenly;
+        border-bottom: 3px solid black;
+        position: sticky;
     }
 
     .i4 {
         grid-area: logo;
         align-self: center;
+        justify-content: center;
+        padding-left: 20px;
     }
 
     .i5 {
         grid-area: i5;
-        justify-self: start;
+        justify-self: center;
         align-self: center;
+        justify-content: center;
+        flex-grow: 2;
+        padding-left: 105px;
     }
-    
+
+
     .container {
         display: grid;
         gap: 10px;
@@ -156,10 +164,11 @@ a{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas:
-            'logo i5 i5 i5'
-            'i1 i2 i3 order'
-            'aside flex flex flex';
+            'biglogo biglogo biglogo biglogo'
+            'aside flex flex flex'
+            'footer footer footer footer';
     }
+
 
     .button {
         padding: 5px 5px;
