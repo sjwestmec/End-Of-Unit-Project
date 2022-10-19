@@ -1,4 +1,5 @@
-.i1 {
+
+.i1 {   
     grid-area: i1;
     align-self: center;
 }
@@ -31,7 +32,27 @@
 
 .form{
     grid-area: form;
-    justify-self: center;
+   width: 67%;
+}
+
+.footer {
+    grid-area: footer;
+    justify-items: center;
+    background-color: #C6C7C4;
+    border-top: 3px solid black;
+}
+
+.end {
+    text-align: center;
+    font-size: small;
+}
+
+.header {
+    display: flex;
+    background-color: #C6C7C4;
+    border-bottom: 3px solid black;
+    justify-content: space-evenly;
+    position: sticky;
 }
 
 .container {
@@ -40,12 +61,11 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        'logo i5 i5 i5 i1 i2 i3 order'
-        'form form form form form form form form';
+        'footer footer footer footer footer footer footer footer';
 }
 
 form{
-    width: 67%;
+    width: 100%;
     margin: auto;
 }
 

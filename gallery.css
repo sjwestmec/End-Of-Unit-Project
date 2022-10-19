@@ -1,0 +1,134 @@
+body {
+    margin: 0px;
+    background-color: #487346;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%234c8e43' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%236aac5f' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%234c8e43' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%236aac5f' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%2389CC7C' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23768c3a' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%2396ac58' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%2396ac58' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23768c3a' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23768c3a' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%2396ac58' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.i1 {
+    grid-area: i1;
+    align-self: center;
+    justify-content: center;
+}
+
+.i2 {
+    grid-area: i2;
+    align-self: center;
+    justify-content: center;
+}
+
+.i3 {
+    grid-area: i3;
+    align-self: center;
+    justify-content: center;
+}
+
+.i4 {
+    grid-area: logo;
+    align-self: center;
+    justify-content: center;
+}
+
+.i5 {
+    grid-area: i5;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+}
+
+.order {
+    grid-area: order;
+    align-self: center;
+    justify-content: center;
+}
+
+
+.footer {
+    grid-area: footer;
+    justify-items: center;
+    background-color: #C6C7C4;
+    border-top: 3px solid black;
+}
+
+.end {
+    text-align: center;
+    font-size: small;
+}
+
+.header {
+    display: flex;
+    background-color: #C6C7C4;
+    border-bottom: 3px solid black;
+    justify-content: space-evenly;
+    position: sticky;
+}
+.burger {
+    grid-area: burger;
+    align-self: center;
+    justify-self: end;
+}
+
+.oreo{
+    grid-area: oreo;
+    align-self: center;
+    justify-self: start;
+}
+
+.fries {
+    grid-area: fries;
+    align-self: center;
+    justify-self: start;
+}
+
+.customer {
+    grid-area: customer;
+    align-self: center;
+    justify-self: center;
+}
+
+.icecream {
+    grid-area: ice;
+    align-self: center;
+    justify-self: end;
+}
+
+.salad {
+    grid-area: salad;
+    align-self: center;
+    justify-self: start;
+}
+
+.chef {
+    grid-area: chef;
+    align-self: center;
+    justify-self: center;
+}
+
+.appetizer {
+    grid-area: app;
+    align-self: center;
+    justify-self: end;
+}
+
+
+.video {
+    grid-area: video;
+    align-self: center;
+    justify-self: center;
+}
+
+.size{
+    width: 500px;
+    height: 500px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'burger customer salad'
+    'app video fries'
+    'ice chef oreo'
+    'ice chef oreo'
+    'footer footer footer';
+}

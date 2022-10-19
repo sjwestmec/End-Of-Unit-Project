@@ -62,14 +62,33 @@
     height: 300px;
     width: 300px;
 }
+
+.header {
+    display: flex;
+    background-color: #C6C7C4;
+    border-bottom: 3px solid black;
+    justify-content: space-evenly;
+    position: sticky;
+}
+
+.footer {
+    grid-area: footer;
+    justify-items: center;
+    background-color: #C6C7C4;
+    border-top: 3px solid black;
+}
+
+.end {
+    text-align: center;
+    font-size: small;
+}
+
 .container {
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        'logo i5 i5 i5 i1 i2 i3 order'
-        '. . . . . . . .'
         'title title title title title title title title'
         '. aside aside . flex flex flex flex';
 }
